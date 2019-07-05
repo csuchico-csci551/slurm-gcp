@@ -24,7 +24,7 @@ resources:
   type: slurm.jinja
   properties:
     cluster_name            : g1
-    static_node_count       : 1
+    static_node_count       : 2
     max_node_count          : 10
 
     zone                    : us-central1-b
@@ -37,9 +37,9 @@ resources:
     #vpc_subnet              : < my-subnet >
     #shared_vpc_host_proj    : < my-shared-vpc-project-name >
 
-    controller_machine_type : g1-small
-    compute_machine_type    : g1-small
-    login_machine_type      : g1-small
+    controller_machine_type : f1-micro
+    compute_machine_type    : f1-micro
+    login_machine_type      : f1-micro
     #login_node_count        : 0
 
     # Optional compute configuration fields
